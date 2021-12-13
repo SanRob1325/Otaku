@@ -15,7 +15,6 @@
     
     <title>Otaku</title>
 </head>
-<<<<<<< HEAD
 <body class="Home">
     <div class="container1">
     <img class="logo" src="Images/otaku-logo-resize.png" alt="image of site logo">
@@ -23,13 +22,6 @@
     </div>
     <h1 class="otaku">Otaku</h1>
     
-=======
-<body>
-    <img src="Images/OTAKU-Logo.png" alt="image of site logo">
-
-
-    <h1 class="Otaku">Otaku</h1>
->>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 
     <ul id="h_bar"><!--This is the horizonal navigation bar-->
         <li><a href="Index.html">Home</a></li><!--This leads to this webpage-->
@@ -42,7 +34,6 @@
         <li><a href="Game.html">Mini-Game</a></li>
     </ul>
     <br>
-<<<<<<< HEAD
     
 </div>
 
@@ -70,9 +61,9 @@
         <!--This is the HTML for the gallery of 6 images-->
         <h3 class="intro">A image gallery of 20th Century Anime Series</h3>
         <div class="main"></div>
-            <img onclick="showTextImage()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
+            <img id="hidetext" onclick="showTextImage()" class="gallery" src="Images/Astro-Boy.jpg" alt="Image of Astroboy">
             <a href="javascript: changeText(2);">
-            <img id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
+            <img onclick= "this.InnerHTML='Inuyasha (2000)'" id="image" class="gallery" src="Images/Inuyasha.jpg" alt="Image of Inuyasha">
             </a>
             <a href="javascript: changeText(3);">
             <img id="image" class="gallery" src="Images/Hakusho.jpg" alt="Image of Hakusho">
@@ -128,116 +119,12 @@
             
         </form>
     </div>
-=======
-</div>
-
-    <img src="Images/Shonen.jpg" alt="A picture of Shonen characters">
-    <div>
-        <h2>Introduction</h2>
-        <p class="para1"><strong>Welcome</strong> this is a anime society club site designed to inform members of the anime community</p><!--General information about this website-->
-        <br/>
-    </div>
-    
-    <div>
-        <h2>Who are we?</h2>
-        <p class="para2">The anime community is vast and continoulsy grows due to its various amount of genres and styles,such as action,comedy,slice of life etc.</p>
-        <br/>
-    </div>
-    <div>
-        <h2>How to sign up</h2>
-        <p>Below is a form for you to sign up to the Otaku community,this is completley optional if you want to join the Anime watcher community</p>
-        <br/>
-    </div>
-    <table class="anime">
-        <tr>
-            <th>Anime </th>
-            <th>Most watched Animes</th>
-            <th>Top 5 Animes of all time</th>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-    </table>
-    <br/>
-
-    <h3>Sign Up!</h3>
-    <!--Input forms for new members to sign up-->
-    <form>
-        <div class="firstname">
-            <label>Your First Name</label>
-            <input type="text" id="fname" name="First name">
-            <br/>
-        </div>
-        <div class="surname">
-            <label>Your Surname</label>
-            <input type="text" id="sname" name="Surname">
-        <br/>
-        </div>
-        <div class="age">
-            <label>Age</label>
-            <input id="age" name="age"><br>
-            <button onclick="confirm()">Confirm</button>
-            
-        <br/>
-        </div>
-        <div class="email">
-            <label>Your Email Address</label>
-            <input type="text" id="email" name="Email">
-            <br/>
-        </div>
-        <div class="phone">
-            <label>Your Phone number</label>
-            <input type="text" id="number" name="Phone">
-            <br/>
-        </div>
-        <div class="gender">
-            <label for="male">Male</label>
-            <input type ="radio" name="sex" id="male">
-        </div>
-        <div class="gender">
-            <label for="female">Female</label>
-            <input type ="radio" name="sex" id="female">
-        </div>
-        <div class="gender">
-            <label for="non-binary">Non-Binary</label>
-            <input type="radio" name="sex" id="non-binary">
-        </div>
-        <div class="gender">
-            <label for="none">Prefer not say</label>
-            <input type="radio" name="sex" id="none"><!--This is an option for those not comformatable about confirming their gender-->
-        </div>
-        <label>Terms and Agreement</label>
-        <h6>All information has been consented</h6>
-        <input type="checkbox" id="term" name="Terms"> <!--This is check if the user agree with all terms and agreements with signing upt to the community-->
-        
->>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
         <button onclick="submit()">Submit</button><!---This is the submit button-->
         
 
     </form>
-<<<<<<< HEAD
   
 
-=======
-
-<script>
-
-    function confirm(){
-
-        var num1= Number(document.getElementById("age").value)//This is used to refer by back to id 
-        if(num1<13){
-            window.alert("Your not at the correct age,sincere apologies");//This window will pop up if the user is not the correct age
-
-        }
-        else{
-            window.alert("You at the age of consent for the website,welcome");
-        }
-
-    }
-    
-
-    
->>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 
 <script>
     var name = document.getElementById("uname");
@@ -251,7 +138,6 @@
             document.write("Your username needs to be entered");
         }
 
-<<<<<<< HEAD
         if(messages.length > 0){
             e.preventDefault();
             errorElement.innerText = messages.join(',');//prevents user from moving on if nothhas been submmitted in the forms
@@ -283,13 +169,10 @@
         }
 
     }
-=======
-</script>
->>>>>>> 011e57d5d222ca361a0d7116050a80bfd37edb29
 
     
-    function showText(value){
-        var div = document.getElementById("")
+    function showTextImage(value){
+       document.getElementById("hidetext").innerHTML="Astroboy"
 
     }
     
