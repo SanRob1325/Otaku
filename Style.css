@@ -1,11 +1,4 @@
-/*Sean edited background color*/
-body{
-    background-color:yellow;
-    font-size: 13pt;
-    /*presley-under*/
-    overflow-x:hidden
 
-}
 /*Sean*/
 #h_bar{
     list-style-type: none;
@@ -121,31 +114,12 @@ a{
 
 
 
-@media screen and (max-width: 800px) {
-
-    .MHA{
-
-        height: 600px;
-        width:  600px;
-    }
 
 
 
 
 
-}
 
-/*Sean*/
-@media screen and(max-width:800px){
-
-
-}
-/*Added media queries for RWD*/
-/*Sean*/
-@media screen and(max-width:800px){
-
-
-}
 
 
 .para1{
@@ -573,3 +547,417 @@ table, th, td {
   float:left;
   justify-content: center;
 }
+=======
+body{
+    background-color:yellow;
+    font-size: 13pt;
+    /*presley-under*/
+    overflow-x:hidden
+
+
+
+}
+/*Sean*/
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*This is the navagtion bar styling*/
+    background-color:black;
+    flex-wrap:wrap;
+}
+/*Sean*/
+.nav-ul li {
+
+    float:left;
+}
+
+
+/*Sean*/
+.nav-ul li a{
+    display:inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    /*pres;ey*/
+    box-shadow:inset 0 0 0 0 yellow;
+    transition: ease-out 1s;
+    position: relative;
+    outline:none;
+    cursor:pointer;
+}
+
+
+
+/*presley- adds a hover on nav bar that changes color, and also gives an animation when cursor is pointed in it*/
+.nav-ul li a:hover{
+  box-shadow: inset 0 0 0 2px yellow;
+  color:gray;
+  cursor:pointer;
+}
+/*presley*/
+.hamburger{
+  background-color: transparent;
+  border:0;
+  color: black;
+  font-size: 30px;
+  cursor:pointer;
+  display: none;
+  float:right;
+}
+
+.hamburger:focus{
+  /*removes outline on button */
+  outline:none;
+}
+
+/*Sean*/
+.para1{
+    font-family: 'Oswald',
+    sans-serif;
+    font-family: 'Shippori Antique',
+    sans-serif;
+    float:left;
+
+}
+
+.para2{
+
+}
+
+
+
+/*css for manual navigation*/
+/*Sean*/
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+h1{
+
+}
+/*Sean*/
+.para2,.para4{
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-family: 'Oswald',
+    sans-serif;
+    font-family: 'Shippori Antique',
+    sans-serif;
+}
+
+.para3{
+
+    font-family: 'Noto Sans JP',
+    sans-serif;
+
+}
+
+a{
+
+}
+
+
+a{
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+    /*sean*/
+    .MHA{
+        height: 600px;
+        width:  600px;
+    }
+    /*presley*/
+    .contact{
+      max-width:80%;
+    }
+    .input{
+      max-width:90%;
+    }
+    .kirito_and_co{
+      width:85%;
+      height:85%;
+    }
+    .sao_cover{
+      width:65%;
+      height:65%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+  /*presley*/
+  .contact{
+    max-width:75%;
+  }
+  .input{
+    max-width:90%;
+  }
+  .kirito_and_co{
+    max-width:40%;
+    max-height:50%;
+  }
+  .sao_cover{
+    max-width:35%;
+  }
+  .kirito_alfheim{
+    max-width:316px;
+    max-height:220px;
+  }
+  .hamburger{
+    display:block;
+  }
+  .nav-ul{
+    display:none;
+    width:100%;
+  }
+  .nav-ul.show{
+    display: inline-block;
+  }
+  .contact-h2{
+    position:relative;
+    right: -20px;
+  }
+
+
+
+}
+
+
+
+@media screen and(max-width:320px){
+  /*presley*/
+  .contact{
+    max-width:45%;
+  }
+  .input{
+    max-width:45%;
+  }
+  .kirito_and_co{
+    max-width:25%;
+    max-height:25%;
+  }
+  .sao_cover{
+    max-width:35%;
+  }
+  .krito_alfheim{
+    max-width:20%;
+  }
+
+
+}
+
+
+
+
+.para1{
+    float:right;
+    padding-left: 5%;
+}
+
+
+
+/*presley*/
+.kirito_and_co{
+  width:240px;
+  height:380px;
+  border-radius:15px;
+  float:right;
+  margin: 5px;
+
+}
+/*presley*/
+.sao_cover{
+  width:240px;
+  height:380px;
+  border-radius:15px;
+  float:left;
+  margin: 5px;
+}
+/*presley*/
+.kirito_alfheim{
+  position:relative;
+  float: right;
+  border-radius:15px;
+  width:640px;
+  height:360px;
+}
+/*presley*/
+.sao_para,.contact-h2,.button{
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+/*presley*/
+.sao_list,.sao_list2{
+  position:relative;
+  right: -20px;
+  font-family: 'Shippori Antique',
+  sans-serif;
+}
+
+/*Sean*/
+.MHA{
+    padding:0;
+    margin:0;
+}
+
+
+.container{
+    padding:30px;
+    font-size:15px;
+    font-weight: 300;
+    line-height: 24px;;
+
+}
+
+.container p{
+    margin-bottom: 15px;
+}
+
+.picture{
+    width:450px;
+    position:relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/*Sean*/
+.picture:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border: 8px solid #fff;
+    z-index: 2;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+/*solomon*/
+.kage{
+    width: 55%;
+    height: 15%;
+    position: relative;
+    right: -250px;
+}
+/*solomon*/
+.characters{
+          position: relative;
+          right:-600px;
+}
+/*solomon*/
+table{
+    position: relative;
+    top:-225px;
+  }
+  /*solomon*/
+  .narutopara1{
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    font-family: 'Oswald',
+    sans-serif;
+    font-family: 'Shippori Antique',
+    sans-serif;
+  }
+
+  /*solomon*/
+table, th, td {
+  border: 1px solid black;
+}
+
+/*preley*/
+.contact-page{
+  margin: 0;
+  padding: 0;
+}
+/*presley*/
+.contact{
+  margin: auto;
+  width: 500px;
+  /*sets a box shadow on the right on 40px with grey */
+  box-shadow: 0 0 40px 0 grey;
+  border-radius: 10px;
+  /* moving th eposttion of th econtact box from the top and left */
+  transform: translate( -30%. -50%);
+}
+/*presley*/
+.input{
+  width: 400px;
+  height: 50px;
+  padding-right:15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  border: 1px  grey;
+  border-radius:14px;
+  outline: none;
+}
+/*presley*/
+.contact-form{
+  margin: 25px;
+}
+/*presley*/
+.textarea-field{
+  height: 150px;
+  padding-top: 10px;
+}
+
+/*presley*/
+.button{
+  margin-top:14px;
+  padding: 5px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  background-color:black;
+    border-radius: 10%;
+    color:white;
+    font-size:20px;
+    border: none;
+    /* sets a a box shadow inset, takes 3s to go back to normal */
+    box-shadow: inset 0 0 0 0 #618a3d;
+    transition: ease-out 0.3s;
+    /*mkakes the button able to b clicked on*/
+    cursor: pointer;
+    /*hides scrollbars*/
+    overflow: hidden;
+    outline:none;
+    position: relative;
+    right: -38.5%;
+  }
+
+/*presley - the transition of button when hovering*/
+.button:hover{
+  box-shadow: inset 100px 0 0 0 #618a3d;
+  cursor: pointer;
+  color: white;
+
+}
+
+/*presley*/
+  .contact-h2{
+    text-align: center;
+  }
+
+  /*presley*/
+.SAO{
+  margin: 0;
+  padding: 0;
+}
+/*presley*/
+.sao_main{
+  margin: 10px;
+}
+
